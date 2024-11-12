@@ -1,0 +1,35 @@
+import java.util.*;
+
+public class Main extends Thread {
+    Scanner sc = new Scanner(System.in);
+    public void run() {
+        String[] bname = new String[] { "suthan", "karthi", "siva", "sarathi", "yogesh" };
+        for (String s : bname) {
+            System.out.println(s);
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                System.out.println("Thread interrupted:");
+            }
+        }
+    }
+    public static void main(String[] args) {
+        Main m = new Main();
+        String[] gname = new String[] { "suba", "kamatchi", "neya", "swetha", "priya" };
+        m.start();
+        for (String n : gname) {
+            System.out.println(n);
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                System.out.println("Thread interrupted:") ;
+            }
+        }
+    }
+}
+
+	    int num=772334251;
+	    suba(num);
+		
+	}
+}
